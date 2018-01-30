@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>19.1.1</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>sandbox</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+
+	<name>sandbox</name>
+	<description>Sandbox Java Code.</description>
+	<url>https://github.com/hadim/</url>
+	<inceptionYear>2017</inceptionYear>
+
+	<organization>
+		<name>scijava</name>
+		<url>scijava.org</url>
+	</organization>
+
+	<licenses>
+	</licenses>
+
+	<developers>
+	</developers>
+
+	<contributors>
+		<!-- NB: Need a least one element to override the parent. See: https://issues.apache.org/jira/browse/MNG-5220 -->
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
+
+	<properties>
+		<package-name>sandbox</package-name>
+		<imagej-ops.version>0.40.0-SNAPSHOT</imagej-ops.version>
+		<imglib2-roi.version>0.4.8-SNAPSHOT</imglib2-roi.version>
+	</properties>
+
+	<mailingLists>
+	</mailingLists>
+
+	<dependencies>
+
+		<!--ImageJ -->
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-roi</artifactId>
+			<version>${imglib2-roi.version}</version>
+		</dependency>
+
+		<!-- Enable IJ1 interface at runtime -->
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-legacy</artifactId>
+		</dependency>
+
+		<!-- Unit test library -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+</project>
